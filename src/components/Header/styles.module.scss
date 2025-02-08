@@ -1,0 +1,96 @@
+.main{
+    width: 100vw;
+    padding-bottom: 0;
+    
+    min-height:100vh;
+    
+
+    .vid{
+
+        object-fit: cover;
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        
+    }
+
+    .info{
+        display:flex;
+        flex-direction:column;
+
+        
+        @media only screen and (min-width: 1000px){
+            gap: 2.5rem;
+
+            padding-top: 15rem;
+            padding-left: 15rem;
+        }
+        
+        @media only screen and (max-width: 1000px) and (min-width: 500px){
+
+            gap:3.5rem;
+
+            width: 50%;
+
+            margin: 0 auto;
+            padding-top: 14rem;
+
+            h1{
+                font-size: 4rem !important;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+
+        }
+
+        @media only screen and (max-width: 500px) and (min-width: 200px){
+
+            gap:3.5rem;
+
+            width: 50%;
+
+            margin: 0 auto;
+            padding-top: 10rem;
+
+            h1{
+                font-size: 2rem !important;
+            }
+
+            p{
+                font-size: .7rem;
+            }
+
+        }
+
+        color:white;
+        h1{
+            font-size: 5rem;
+            font-weight: 600;
+            font-family: "ClashDisplay", serif;
+        }
+        p{
+            font-weight: 600;
+            font-family: "Poppins", serif;
+        }
+        button{
+            margin-top:2rem;
+
+            color:black;
+            font-weight: 500;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+
+            background-color: white;
+            height: 2.5rem;
+            width: 8rem;
+            text-align: center;
+            font-family: "ClashDisplay", serif;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.item_main{
+    width: 100vw;
+    height: 42vh;
+    position: relative;
+
+    transition: .8s;
+
+    .item__bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -2;
+    }
+
+    a{
+        cursor: pointer;
+
+        .item__content{
+            position: absolute;
+            height: 12rem;
+            margin:auto;
+    
+            left:5rem;
+            top:50%;
+    
+            color:white;
+    
+            display: flex;
+            flex-direction: column;
+    
+            gap:.4rem;
+    
+            h2{
+                font-weight: 600;
+                font-family: "ClashDisplay", serif;
+            }
+    
+            span{
+                font-weight: 500;
+                font-family: "Poppins", serif;
+            }
+    
+            @media only screen and (min-width: 600px){
+                
+                h2{
+                    font-size: 3rem;
+                }
+        
+                span{
+                    font-size: 1rem;
+                }
+        
+            }
+    
+            @media only screen and (max-width: 600px){
+                
+                h2{
+                    font-size: 2rem;
+                }
+        
+                span{
+                    font-size: .75rem;
+                }
+                
+                left:2rem
+        
+            }
+    
+        }
+    }
+
+
+}
+
+.item_main:hover{
+    filter: brightness(80%)
+}

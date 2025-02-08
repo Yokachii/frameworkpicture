@@ -1,0 +1,157 @@
+.main{
+    background-color: black;
+    min-height: 125vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top:5rem;
+
+    .info{
+        margin: 0 auto;
+        width: 40%;
+        margin-top: 2rem;
+
+        padding-bottom: 4rem;
+
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h1{
+            font-family: "Poppins", serif;
+            font-size: 3.5rem;
+        }
+        p{
+
+            font-family: "Poppins", serif;
+            font-size: 1rem;
+
+            line-height: 2.1rem;
+
+        }
+
+        @media only screen and (max-width: 900px){
+            
+            width: 80vw !important;
+
+        }
+
+    }
+
+    .image_bg{
+        width: 100%;
+        height:60%;
+
+        background-image: url('../../../public/img/TEXTURE_BACK.webp');
+        background-size: cover;
+        padding-bottom: 3rem;
+
+        .image{
+            
+            @media only screen and (min-width: 1500px){
+            
+                width: 100%;
+                height: 66%;
+                
+        
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 15rem;
+                align-items: center;
+    
+                margin-bottom: 1rem;
+                margin-top: 3rem;
+
+            }
+
+            @media only screen and (max-width: 1500px) and (min-width: 750px){
+
+                width: 100%;
+                height: 66%;
+
+                position: relative;
+                
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 2fr);
+                
+                align-items: center;
+                margin-bottom: 1rem;
+                padding: 0 6rem;
+
+                .image_container{
+
+                    margin: auto;
+                
+                }
+
+            }
+
+            @media only screen and (max-width: 750px) and (min-width: 200px){
+
+                width: 100%;
+                height: 66%;
+
+                position: relative;
+                
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 2fr);
+                
+                align-items: center;
+                margin-bottom: 1rem;
+                margin: 0 auto;
+
+                .image_container{
+
+                    margin: auto;
+                
+                }
+
+            }
+            
+            .image_container{
+                width: 15rem;
+                height: 80%;
+    
+                .img{
+                    height: 100%;
+                    width: 100%;
+                }
+                .text{
+                    position: relative;
+                    z-index: 1;
+
+                    height: 37%;
+                    background: black;
+                    color: white;
+                    transform: translateX(1.5rem) translateY(-5.5rem);
+    
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    font-family: "Poppins", serif;
+    
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+        .client{
+            width: 100%;
+            height: 33%;
+            background: transparent;
+        }
+    }
+}

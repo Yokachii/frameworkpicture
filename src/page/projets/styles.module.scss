@@ -1,0 +1,76 @@
+.link{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    height: 100%;
+    align-items: center;
+
+
+    li{
+        transition: .2s;
+        color: white;
+        font-size: 1.1rem;
+        font-family: "ClashDisplay", serif;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:hover{
+        color: #8E6840;
+        }
+
+        a{
+            
+        }
+    }
+
+    .select{
+        color: #8E6840 !important;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 767px){
+    .link{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        height: 50vh;
+
+        li{
+            color: white;
+        }
+    }
+}
+
+.main{
+    
+
+    .card_container{
+        
+        padding-top: 10rem;
+        margin-bottom: 5rem;
+
+    }
+}
+
+.nav-top{
+    background-color: black;
+}
+
+.nav-scroll{
+    background-color: black;
+}
+
+.burger{
+    background-color: black !important;
+}
+
+@media (max-width: 767px){
+   
+    .main_nav{
+        
+        background-color: black !important;
+
+    }
+}

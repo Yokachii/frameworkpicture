@@ -1,0 +1,47 @@
+.main{
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+    position:relative;
+
+    .more{
+        
+
+      width: 100vw;
+      height: 25vh;
+      background-color: black;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      button{
+          position:absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          
+          border-radius: 10px;
+          color: black;
+          font-weight: 400;
+          font-size: 1.2rem;
+          line-height: 0;
+
+          background-color: white;
+          height: 1.9rem;
+          width: 12rem;
+          text-align: center;
+          font-family: "ClashDisplay", serif;
+      }
+      button:hover {
+        background-color: #c0bfbf;
+        transition: all 1s;
+      }
+    
+    }
+
+    
+}

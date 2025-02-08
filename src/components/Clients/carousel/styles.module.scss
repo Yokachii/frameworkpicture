@@ -1,0 +1,85 @@
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+  
+.carousel_container {
+    overflow: hidden;
+    background: transparent;
+    white-space: nowrap;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 200vw;
+}
+  
+.carousel_container:before,
+.carousel_container:after {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+  
+.carousel_container:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+  
+.carousel_container:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+  
+.carousel_track {
+    animation: 60s slide infinite linear;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100vw;
+}
+  
+.carousel_card {
+    margin: 0 1rem;
+    height: 8rem;
+    width: 8rem;
+
+    position: relative;
+
+    align-items: center;
+    
+    img{
+        max-height: 100%;
+        width: 100%;
+        background-size: contain;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 800px){
+
+}
+
+@media only screen and (max-width: 800px){
+    .carousel_track {
+        width: 200vw;
+    }
+}
+@media only screen and (max-width: 400px){
+    .carousel_track {
+        width: 300vw;
+    }
+}
